@@ -445,7 +445,7 @@
 
             var matchingResults = oppositeGenderUsers.map(user => {
                 var commonInterests = user.interests.filter(interest => selectedInterests.includes(interest));
-                var matchingPercentage = (commonInterests.length / selectedInterests.length) * 100;
+                var matchingPercentage = (commonInterests.length / selectedInterests.length) * 99.99;
                 return {
                     name: user.name,
                     instagram: user.instagram,
