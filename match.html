@@ -434,77 +434,6 @@
 
     </html>
     <script>
-        // function matchUsers() {
-        //     var form = document.getElementById("registrationForm");
-
-        //     var name = form.name.value;
-        //     var gender = form.gender.value;
-        //     // var relationshipStatus = form.relationshipStatus.value;
-        //     var selectedInterests = Array.from(form.querySelectorAll('input[type=checkbox]:checked')).map(input => input.value);
-
-        //     var oppositeGenderUsers = usersData.filter(user => user.gender !== gender);
-
-        //     var matchingResults = oppositeGenderUsers.map(user => {
-        //         var commonInterests = user.interests.filter(interest => selectedInterests.includes(interest));
-        //         var matchingPercentage = (commonInterests.length / selectedInterests.length) * 100;
-        //         return {
-        //             name: user.name,
-        //             instagram: user.instagram,
-        //             matchingPercentage: matchingPercentage,
-        //             relationshipStatus:user.relationshipStatus
-
-        //         };
-        //     });
-
-        //     var filteredResults = matchingResults.filter(result => result.matchingPercentage > 40);
-
-        //     var resultWindow = window.open('', '_blank');
-        //     resultWindow.document.write("<html><head><title>Matching Results</title>");
-        //     resultWindow.document.write("<style>");
-        //     resultWindow.document.write("body { font-family: Arial, sans-serif; } color:red;");
-        //     resultWindow.document.write("h2 { color: black; }");
-        //     resultWindow.document.write(".result-item { padding: 10px; margin: 10px; border-radius: 5px; }");
-        //     resultWindow.document.write(".name { font-weight: 800; }");
-        //     resultWindow.document.write(".percentage { font-style: italic; }");
-        //     resultWindow.document.write(".relationshipStatus { font-weight: 800; }");
-        //     resultWindow.document.write(".instagram { font-size: 80%; }");
-        //     resultWindow.document.write("</style>");
-        //     resultWindow.document.write("</head><body>");
-        //     resultWindow.document.write("<h2>Matching Users:</h2>");
-
-        //     if (filteredResults.length > 0) {
-        //         resultWindow.document.write("<style>");
-        //         resultWindow.document.write("body { background-image: url('/image/back.png'); background-size: cover; margin: 0; padding: 0; }");
-        //         resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%); background-size: cover; }");
-        //         resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; }");
-        //         resultWindow.document.write("table, th, td { border: 1px solid black; text-align: center; }");
-        //         resultWindow.document.write("th, td { padding: 10px; }");
-        //         resultWindow.document.write("</style>");
-        //         resultWindow.document.write("<table>");
-        //         resultWindow.document.write("<tr><th>Name</th><th>Matching Percentage</th><th>Instagram</th><th>Status</th></tr>");
-
-        //         filteredResults.forEach(result => {
-        //             resultWindow.document.write("<tr>");
-        //             resultWindow.document.write("<td>" + result.name + "</td>");
-        //             resultWindow.document.write("<td>" + result.matchingPercentage.toFixed(2) + "%</td>");
-        //             resultWindow.document.write("<td><a href='" + result.instagram + "' target='_blank'>" + result.instagram + "</a></td>");
-        //             resultWindow.document.write("<td>" + result.relationshipStatus + "</td>");
-        //             resultWindow.document.write("</tr>");
-        //         });
-
-        //         resultWindow.document.write("</table>");
-        //     } else {
-        //         resultWindow.document.write("<p>No matching users found.</p>");
-        //     }
-
-
-        // }
-
-
-
-
-
-
         function matchUsers() {
             var form = document.getElementById("registrationForm");
 
@@ -545,7 +474,7 @@
 
             if (filteredResults.length > 0) {
                 resultWindow.document.write("<style>");
-                resultWindow.document.write("body { background-image: url('/image/back.png'); background-size: cover; margin: 0; padding: 0; }");
+                resultWindow.document.write("body { background-image: url('./image/back.png'); background-size: cover; margin: 0; padding: 0; }");
                 resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%); background-size: cover; }");
                 resultWindow.document.write("table { border-collapse: collapse; width: 80%; margin: 0 auto; }");
                 resultWindow.document.write("table, th, td { border: 1px solid black; text-align: center; }");
