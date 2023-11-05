@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+     <div id="popup" class="popup-container">
+        <div class="popup-box">
+            <span class="close-button" onclick="closePopup('popup')">&times;</span>
+            <h2>Login / Register</h2>
+            <!-- Add your login and registration options here -->
+            <a href="login.html"><button class="btn btn-primary">Login</button></a>
+            <a href="register.html"><button class="btn btn-primary">Register</button></a>
+        </div>
+    </div>
     <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -124,6 +134,24 @@
             <p>&copy; 2023 College Dating App</p>
         </div>
     </footer>
+
+
+    <script>
+        // Function to open the pop-up
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+
+        // Call openPopup function after 5 seconds
+        setTimeout(function () {
+            openPopup('popup');
+        }, 5000);
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
