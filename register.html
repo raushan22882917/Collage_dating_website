@@ -113,8 +113,16 @@
                 <input type="text" class="form-control" id="social-media" name="social_media">
             </div> -->
             <button type="submit" class="btn btn-primary"  style="margin-left: 250px;"><i class="fas fa-user-plus"></i> Register</button>
+            <button class="btn btn-primary" id="goback">Go Back</button>
         </form>
     </div>
+
+
+     <script>
+        document.getElementById("goback").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
