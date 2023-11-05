@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #191919;
     color: black;
-    background-image: url("https://github.com/raushan22882917/Collage_dating_website/blob/main/image/img2.jpg");
+    background-image: url("./image/img2.jpg");
     image-resolution: 10px;
 }
 
@@ -14,7 +14,6 @@ form {
     width: 800px;
     height: 600px;
     margin: 0 auto;
-    /* background-color: #191919; */
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
